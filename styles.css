@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroud-color: rgb(15, 17, 8);
+  --background-color-box: rgb(36, 25, 9);
+  --color-text: rgb(202, 216, 222);
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: var(--backgroud-color);
+}
+
+/* navbar styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./assets/image/artur-shamsutdinov-GmTxsWc0U18-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* hero styles */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  height: 600px;
+  margin: 20px;
+  border-radius: 4px;
+  gap: 30px;
+  margin: 20px auto;
+}
+
+.title {
+  color: var(--color-text);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descrip {
+  color: var(--color-text);
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 20px;
+}
+
+.hero img {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+}
+
+/* seccion about */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--background-color-box);
+  color: var(--color-text);
+  width: 90%;
+  height: 400px;
+  margin: 20px auto;
+  background-image: url(./assets/image/sala-pcs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about h2 {
+  margin: 20px auto;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.about p {
+  width: 80%;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
